@@ -1,2 +1,4 @@
-<h1>박기철</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<% @que.each do |db| %>
+	<p><% db.name %>: <% db.content %></p>
+	<hr>
+<% end %>
